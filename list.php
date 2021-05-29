@@ -4,7 +4,7 @@
  */
 require 'connect.php';
     
-$cars = [];
+$stocks = [];
 $sql = "SELECT  * FROM stock_data";
 
 if($result = mysqli_query($con,$sql))
@@ -12,12 +12,12 @@ if($result = mysqli_query($con,$sql))
   $cr = 0;
   while($row = mysqli_fetch_assoc($result))
   {
-    $cars[$cr]['id']    = $row['id'];
-    $cars[$cr]['name'] = $row['Name'];
+    $stocks[$cr]['id']    = $row['id'];
+    $stocks[$cr]['name'] = $row['Name'];
     $cr++;
   }
     
-  echo json_encode(['data'=>$cars]);
+  echo json_encode(['data'=>$stocks]);
 }
 else
 {
