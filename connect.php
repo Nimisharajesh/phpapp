@@ -1,10 +1,10 @@
 <?php
 
 // db credentials
-define('DB_HOST', 'localhost');
-define('DB_USER', 'admin');
-define('DB_PASS', 'admin');
-define('DB_NAME', 'stocks');
+define('DB_HOST', 'sql6.freemysqlhosting.net');
+define('DB_USER', 'sql6415894');
+define('DB_PASS', 'qS6mymPdJR');
+define('DB_NAME', 'sql6415894');
 
 // Connect with the database.
 function connect()
